@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AndroidAtlas</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_UI_121">UI—1.2.1-Paint</string>
+    <string name="menu_UI_122">UI—1.2.2-Filter&amp;Xfermode</string>
+    <string name="menu_UI_123">UI—1.2.3-Canvas&amp;Particle</string>
+    <string name="menu_UI_124">UI—1.2.4</string>
+    <string name="menu_UI_125">UI—1.2.5</string>
+    <string name="menu_UI_126">UI—1.2.6</string>
+
+    <string name="title_activity_ui123_canvas">UI123Canvas</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>
