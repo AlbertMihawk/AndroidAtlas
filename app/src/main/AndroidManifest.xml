@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui_124.UI124CanvasActivity"></activity>
         <activity
-            android:name=".ui_123.UI123Canvas"
+            android:name=".ui_123.UI123CanvasActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_ui123_canvas" />
         <activity

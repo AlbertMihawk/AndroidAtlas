@@ -11,7 +11,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.albert.androidatlas.ui_123.UI123Canvas;
+import com.albert.androidatlas.ui_123.UI123CanvasActivity;
+import com.albert.androidatlas.ui_124.UI124CanvasActivity;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+//        setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -83,10 +84,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.ui_122) {
 
         } else if (id == R.id.ui_123) {
-            Intent intent = new Intent(this, UI123Canvas.class);
-            startActivity(intent);
+            startNextAcitivity(UI123CanvasActivity.class);
         } else if (id == R.id.ui_124) {
-
+            startNextAcitivity(UI124CanvasActivity.class);
         } else if (id == R.id.ui_125) {
 
         } else if (id == R.id.ui_126) {
@@ -96,6 +96,11 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void startNextAcitivity(Class<?> clazz) {
+        Intent intent = new Intent(this, clazz);
+        startActivity(intent);
     }
 
 

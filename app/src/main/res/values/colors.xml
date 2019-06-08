@@ -6,4 +6,13 @@
 
     <color name="black_overlay">#66000000</color>
     <color name="black">#FF000000</color>
+
+    <array name="splash_circle_colors" >
+        <item>#ffff0000</item>
+        <item>#ffff00ff</item>
+        <item>#ff0000ff</item>
+        <item>#ff00ffff</item>
+        <item>#ff00ff00</item>
+        <item>#ffffff00</item>
+    </array>
 </resources>

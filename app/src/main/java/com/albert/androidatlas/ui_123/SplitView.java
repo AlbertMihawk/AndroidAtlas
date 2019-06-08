@@ -11,6 +11,7 @@ import android.graphics.Paint;
 import android.graphics.Point;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.BounceInterpolator;
 import android.view.animation.LinearInterpolator;
 
 import com.albert.androidatlas.R;
@@ -54,9 +55,9 @@ public class SplitView extends View {
         int width = options.outWidth;
         int scale;
         if (height > width) {//以高为准
-            scale = (int) (height / 40.0f);//该200说明目标大小为200PX
+            scale = (int) (height / 30.0f);//该200说明目标大小为200PX
         } else {
-            scale = (int) (width / 40.0f);//该200说明目标大小为200PX
+            scale = (int) (width / 30.0f);//该200说明目标大小为200PX
         }
         if (scale <= 0) {
             scale = 1;
@@ -89,8 +90,11 @@ public class SplitView extends View {
         //属性动画
         mAnimator = ValueAnimator.ofFloat(0, 1);
         mAnimator.setRepeatCount(-1);
+
+        //一下两个属性并不明显
         mAnimator.setDuration(2000);
         mAnimator.setInterpolator(new LinearInterpolator());
+
         mAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
@@ -142,9 +146,11 @@ public class SplitView extends View {
         for (Particle particle : mParticles) {
             mPaint.setColor(particle.color);
             //绘制图像的圆点
-//            canvas.drawCircle(particle.x, particle.y, particle.r, mPaint);
-            canvas.drawPoint(particle.x,particle.y,mPaint);
+            canvas.drawCircle(particle.x, particle.y, particle.r, mPaint);
+            //绘制像素点
+//            canvas.drawPoint(particle.x,particle.y,mPaint);
         }
+
 //        canvas.drawBitmap(mBitmap, 0, 0, mPaint);
     }
 

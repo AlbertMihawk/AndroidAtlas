@@ -1,0 +1,6 @@
+<component name="CopyrightManager">
+  <copyright>
+    <option name="notice" value="Filename : &amp;#36;file.fileName&#10;&#10;@author : Mihawk&#10;@since : &amp;#36;today.format(&quot;YYYY-MM-dd&quot;)" />
+    <option name="myName" value="lee" />
+  </copyright>
+</component>
