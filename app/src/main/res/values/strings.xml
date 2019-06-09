@@ -11,7 +11,7 @@
     <string name="menu_UI_122">UI—1.2.2-Filter&amp;Xfermode</string>
     <string name="menu_UI_123">UI—1.2.3-Canvas&amp;Particle</string>
     <string name="menu_UI_124">UI—1.2.4-CanvasCase</string>
-    <string name="menu_UI_125">UI—1.2.5</string>
+    <string name="menu_UI_125">UI—1.2.5-BezierPath</string>
     <string name="menu_UI_126">UI—1.2.6</string>
 
     <string name="title_activity_ui123_canvas">UI123Canvas</string>

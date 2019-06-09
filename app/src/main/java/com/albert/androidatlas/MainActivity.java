@@ -13,6 +13,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.albert.androidatlas.ui_123.UI123CanvasActivity;
 import com.albert.androidatlas.ui_124.UI124CanvasActivity;
+import com.albert.androidatlas.ui_125.UI125CanvasActivity;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -88,7 +89,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.ui_124) {
             startNextAcitivity(UI124CanvasActivity.class);
         } else if (id == R.id.ui_125) {
-
+            startNextAcitivity(UI125CanvasActivity.class);
         } else if (id == R.id.ui_126) {
 
         }

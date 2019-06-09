@@ -10,7 +10,6 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
-import android.view.animation.CycleInterpolator;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.OvershootInterpolator;
 
@@ -57,6 +56,7 @@ public class SplashView extends View {
     private float mCurrentHoleRadius = 0F;
     //表示旋转动画的时长
     private int mRotateDuration = 1200;
+    private SplashState mState;
 
     public SplashView(Context context) {
         this(context, null);
@@ -67,11 +67,11 @@ public class SplashView extends View {
         this(context, attrs, 0);
     }
 
+
     public SplashView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initView();
     }
-
 
     private void initView() {
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -95,18 +95,31 @@ public class SplashView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         if (mState == null) {
-            mState = new ExpandState();
+            mState = new RotateState();
         }
         mState.drawState(canvas);
 
     }
 
+    private void drawCircles(Canvas canvas) {
+        float rotateAngle = (float) (Math.PI * 2.0f / mCircleColors.length);
+        for (int i = 0; i < mCircleColors.length; i++) {
+            float angle = rotateAngle * i + mCurrentRotateAngle;
+            mPaint.setColor(mCircleColors[i]);
+            //x = r * cos(a) + centerX
+            //y = r * sin(a) + centerY
+            canvas.drawCircle(mCenterX + mCurrentRotateRadius * (float) Math.cos(angle),
+                    mCenterY + mCurrentRotateRadius * (float) Math.sin(angle), mCircleRadius, mPaint);
+        }
+    }
+
+    private void drawBackground(Canvas canvas) {
+        canvas.drawColor(mBackgroundColor);
+    }
+
     private abstract class SplashState {
         abstract void drawState(Canvas canvas);
     }
-
-    private SplashState mState;
-
 
     //1.旋转
     private class RotateState extends SplashState {
@@ -146,23 +159,6 @@ public class SplashView extends View {
 
     }
 
-    private void drawCircles(Canvas canvas) {
-        float rotateAngle = (float) (Math.PI * 2.0f / mCircleColors.length);
-        for (int i = 0; i < mCircleColors.length; i++) {
-            float angle = rotateAngle * i + mCurrentRotateAngle;
-            mPaint.setColor(mCircleColors[i]);
-            //x = r * cos(a) + centerX
-            //y = r * sin(a) + centerY
-            canvas.drawCircle(mCenterX + mCurrentRotateRadius * (float) Math.cos(angle),
-                    mCenterY + mCurrentRotateRadius * (float) Math.sin(angle), mCircleRadius, mPaint);
-        }
-    }
-
-    private void drawBackground(Canvas canvas) {
-        canvas.drawColor(mBackgroundColor);
-    }
-
-
     //2.扩散聚合
     private class MarginState extends SplashState {
         private MarginState() {
@@ -201,11 +197,11 @@ public class SplashView extends View {
     private class ExpandState extends SplashState {
 
         public ExpandState() {
-            mValueAnimator = ValueAnimator.ofFloat(0, mDistance*2);
+            mValueAnimator = ValueAnimator.ofFloat(0, mDistance * 2);
 //            mValueAnimator.setRepeatCount(2);
             mValueAnimator.setDuration(mRotateDuration);
 
-            mValueAnimator.setInterpolator(new CycleInterpolator(3));
+            mValueAnimator.setInterpolator(new LinearInterpolator());
             mValueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                 @Override
                 public void onAnimationUpdate(ValueAnimator animation) {
@@ -221,7 +217,7 @@ public class SplashView extends View {
         @Override
         void drawState(Canvas canvas) {
             //绘制空心圆
-            float strokeWidth = mDistance*2 - mCurrentHoleRadius;
+            float strokeWidth = mDistance * 2 - mCurrentHoleRadius;
             Log.d(TAG, "strokeWidth: " + strokeWidth);
             float radius = mDistance;
             Log.d(TAG, "radius: " + radius);
