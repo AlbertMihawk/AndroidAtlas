@@ -1,4 +1,4 @@
-package com.albert.androidatlas.ui_123;
+package com.albert.androidatlas.ui_core_123;
 
 import android.animation.ValueAnimator;
 import android.app.Activity;
@@ -11,7 +11,6 @@ import android.graphics.Paint;
 import android.graphics.Point;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.animation.BounceInterpolator;
 import android.view.animation.LinearInterpolator;
 
 import com.albert.androidatlas.R;

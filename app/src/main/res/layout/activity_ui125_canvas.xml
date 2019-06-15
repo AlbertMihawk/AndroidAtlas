@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui_125.UI125CanvasActivity">
+    tools:context=".ui_core_125.UI125CanvasActivity">
 
-    <com.albert.androidatlas.ui_125.DragBubbleView
+    <com.albert.androidatlas.ui_core_125.DragBubbleView
         android:id="@+id/dragBubbleView"
         android:layout_width="0dp"
         android:layout_height="0dp"

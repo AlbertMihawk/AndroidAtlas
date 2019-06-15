@@ -21,22 +21,11 @@
             android:id="@+id/ui_125"
             android:title="@string/menu_UI_125" />
         <item
-            android:id="@+id/ui_126"
-            android:title="@string/menu_UI_126" />
-        <item android:title="@string/menu_UI_121" />
-        <item android:title="@string/menu_UI_122" />
-        <item android:title="@string/menu_UI_123" />
-        <item android:title="@string/menu_UI_124" />
-
-        <item android:title="@string/menu_UI_125" />
-        <item android:title="@string/menu_UI_126" />
-        <item android:title="@string/menu_UI_121" />
-        <item android:title="@string/menu_UI_122" />
-        <item android:title="@string/menu_UI_123" />
-        <item android:title="@string/menu_UI_124" />
-
-        <item android:title="@string/menu_UI_125" />
-        <item android:title="@string/menu_UI_126" />
+            android:id="@+id/fit_213"
+            android:title="@string/menu_Fit_213" />
+        <item
+            android:id="@+id/fit_214"
+            android:title="@string/menu_Fit_214" />
     </group>
 
 </menu>

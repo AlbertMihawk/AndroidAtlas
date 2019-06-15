@@ -1,4 +1,4 @@
-package com.albert.androidatlas.ui_123;
+package com.albert.androidatlas.ui_core_123;
 
 /**
  * FileName : Particle.java

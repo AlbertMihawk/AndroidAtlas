@@ -1,4 +1,4 @@
-package com.albert.androidatlas.ui_124;
+package com.albert.androidatlas.ui_core_124;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

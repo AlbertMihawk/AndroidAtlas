@@ -11,10 +11,23 @@
 
 
     <declare-styleable name="DragBubbleView">
-        <attr name="bubble_radius" format="dimension"/>
-        <attr name="bubble_color" format="color"/>
-        <attr name="bubble_text" format="string"/>
-        <attr name="bubble_textSize" format="dimension"/>
-        <attr name="bubble_textColor" format="color"/>
+        <attr name="bubble_radius" format="dimension" />
+        <attr name="bubble_color" format="color" />
+        <attr name="bubble_text" format="string" />
+        <attr name="bubble_textSize" format="dimension" />
+        <attr name="bubble_textColor" format="color" />
     </declare-styleable>
+
+
+    <!--Screen_fit_212-->
+    <declare-styleable name="PercentLayout">
+        <attr name="widthPercent" format="float" />
+        <attr name="heightPercent" format="float" />
+        <attr name="marginLeftPercent" format="float" />
+        <attr name="marginRightPercent" format="float" />
+        <attr name="marginTopPercent" format="float" />
+        <attr name="marginBottomPercent" format="float" />
+    </declare-styleable>
+
+
 </resources>

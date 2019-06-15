@@ -1,4 +1,4 @@
-package com.albert.androidatlas.ui_125;
+package com.albert.androidatlas.ui_core_125;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -400,5 +400,9 @@ public class DragBubbleView extends View {
         invalidate();
     }
 
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 
+    }
 }

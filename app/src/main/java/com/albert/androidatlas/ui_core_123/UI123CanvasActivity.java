@@ -1,4 +1,4 @@
-package com.albert.androidatlas.ui_123;
+package com.albert.androidatlas.ui_core_123;
 
 import android.os.Bundle;
 

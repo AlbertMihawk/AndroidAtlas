@@ -11,9 +11,11 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.albert.androidatlas.ui_123.UI123CanvasActivity;
-import com.albert.androidatlas.ui_124.UI124CanvasActivity;
-import com.albert.androidatlas.ui_125.UI125CanvasActivity;
+import com.albert.androidatlas.screen_fit_213.ScreenFit213Activity;
+import com.albert.androidatlas.screen_fit_214.DisplayCutoutActivity;
+import com.albert.androidatlas.ui_core_123.UI123CanvasActivity;
+import com.albert.androidatlas.ui_core_124.UI124CanvasActivity;
+import com.albert.androidatlas.ui_core_125.UI125CanvasActivity;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -90,8 +92,10 @@ public class MainActivity extends AppCompatActivity
             startNextAcitivity(UI124CanvasActivity.class);
         } else if (id == R.id.ui_125) {
             startNextAcitivity(UI125CanvasActivity.class);
-        } else if (id == R.id.ui_126) {
-
+        } else if (id == R.id.fit_213) {
+            startNextAcitivity(ScreenFit213Activity.class);
+        } else if (id == R.id.fit_214) {
+            startNextAcitivity(DisplayCutoutActivity.class);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

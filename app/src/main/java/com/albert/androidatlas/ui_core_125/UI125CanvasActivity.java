@@ -1,4 +1,4 @@
-package com.albert.androidatlas.ui_125;
+package com.albert.androidatlas.ui_core_125;
 
 import android.os.Bundle;
 import android.view.MotionEvent;

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui_124.UI124CanvasActivity">
+    tools:context=".ui_core_124.UI124CanvasActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.albert.androidatlas.ui_124.SplashView
+    <com.albert.androidatlas.ui_core_124.SplashView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
