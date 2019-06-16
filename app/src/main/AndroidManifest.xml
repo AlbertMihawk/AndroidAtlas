@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".screen_fit_214.DisplayCutoutActivity"></activity>
+        <activity android:name=".material_design_312.MaterialDesign312Activity"></activity>
+        <activity android:name=".screen_fit_214.DisplayCutoutActivity" />
         <activity android:name=".screen_fit_213.ScreenFit213BaseActivity" />
         <activity android:name=".screen_fit_213.ScreenFit213Activity" />
         <activity android:name=".screen_fit_212.ScreenFit212" />
