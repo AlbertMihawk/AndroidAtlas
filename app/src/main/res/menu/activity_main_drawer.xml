@@ -29,6 +29,9 @@
         <item
             android:id="@+id/design_312_313"
             android:title="@string/menu_Design_312_313" />
+        <item
+            android:id="@+id/design_314"
+            android:title="@string/menu_Design_314" />
     </group>
 
 </menu>

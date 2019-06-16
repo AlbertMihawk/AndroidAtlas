@@ -44,6 +44,7 @@ public class MaterialDesign312Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
+        //加入刘海区沉浸式功能
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(FLAG_FULLSCREEN,
                 FLAG_FULLSCREEN);
@@ -56,6 +57,8 @@ public class MaterialDesign312Activity extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                 | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | visibility);
 
+
+        //隐藏actionBar
         getSupportActionBar().hide();
         setContentView(R.layout.activity_material_design312);
 

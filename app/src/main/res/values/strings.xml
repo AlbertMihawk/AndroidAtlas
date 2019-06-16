@@ -15,6 +15,6 @@
     <string name="menu_Fit_213">Fit-2.1.3-Density</string>
     <string name="menu_Fit_214">Fit-2.1.4-CutoutDisplay</string>
     <string name="menu_Design_312_313">Design-3.1.2&amp;3.1.3-Recycle&amp;Coord&amp;Nested</string>
-
+    <string name="menu_Design_314">Design-3.1.4-CardView</string>
 
 </resources>
