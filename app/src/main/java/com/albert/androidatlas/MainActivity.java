@@ -11,7 +11,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.albert.androidatlas.material_design_312.MaterialDesign312Activity;
+import com.albert.androidatlas.material_design_312_313.MaterialDesign312Activity;
 import com.albert.androidatlas.screen_fit_213.ScreenFit213Activity;
 import com.albert.androidatlas.screen_fit_214.DisplayCutoutActivity;
 import com.albert.androidatlas.ui_core_123.UI123CanvasActivity;
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity
             startNextAcitivity(ScreenFit213Activity.class);
         } else if (id == R.id.fit_214) {
             startNextAcitivity(DisplayCutoutActivity.class);
-        } else if (id == R.id.design_312) {
+        } else if (id == R.id.design_312_313) {
             startNextAcitivity(MaterialDesign312Activity.class);
         }
 

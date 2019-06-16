@@ -1,10 +1,14 @@
-package com.albert.androidatlas.material_design_312;
+package com.albert.androidatlas.material_design_312_313;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,6 +16,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.albert.androidatlas.R;
 import com.squareup.picasso.Picasso;
+
+import static android.view.WindowManager.LayoutParams.FLAG_FULLSCREEN;
 
 /**
  * Filename : MaterialDesign312Activity.java
@@ -32,11 +38,25 @@ public class MaterialDesign312Activity extends AppCompatActivity {
     private int mCurrentPosition;
 
 
+    @RequiresApi(api = Build.VERSION_CODES.P)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
 
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(FLAG_FULLSCREEN,
+                FLAG_FULLSCREEN);
+
+        WindowManager.LayoutParams params = getWindow().getAttributes();
+        params.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
+        getWindow().setAttributes(params);
+
+        int visibility = getWindow().getDecorView().getSystemUiVisibility();
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | visibility);
+
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_material_design312);
 
         mSuspensionBar = findViewById(R.id.suspension_bar);

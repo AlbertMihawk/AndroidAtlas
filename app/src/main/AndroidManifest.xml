@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".material_design_312.MaterialDesign312Activity"></activity>
+        <activity android:name=".material_design_312_313.MaterialDesign312Activity"></activity>
         <activity android:name=".screen_fit_214.DisplayCutoutActivity" />
         <activity android:name=".screen_fit_213.ScreenFit213BaseActivity" />
         <activity android:name=".screen_fit_213.ScreenFit213Activity" />
@@ -19,7 +19,7 @@
         <activity
             android:name=".ui_core_123.UI123CanvasActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_ui123_canvas" />
+            android:label="@string/menu_UI_123" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
