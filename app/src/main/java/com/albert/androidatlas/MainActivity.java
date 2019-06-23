@@ -15,10 +15,12 @@ import com.albert.androidatlas.material_design_312_313.MaterialDesign312Activity
 import com.albert.androidatlas.material_design_314.MaterialDesign314Activity;
 import com.albert.androidatlas.screen_fit_213.ScreenFit213Activity;
 import com.albert.androidatlas.screen_fit_214.DisplayCutoutActivity;
+import com.albert.androidatlas.screen_fit_215.Screen215MusicAdapterActivity;
 import com.albert.androidatlas.ui_core_123.UI123CanvasActivity;
 import com.albert.androidatlas.ui_core_124.UI124CanvasActivity;
 import com.albert.androidatlas.ui_core_125.UI125CanvasActivity;
 import com.albert.androidatlas.ui_core_141.UI141AnimationActivity;
+import com.albert.androidatlas.ui_core_142.UI142MusicAnimationActivity;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -97,10 +99,14 @@ public class MainActivity extends AppCompatActivity
             startNextAcitivity(UI125CanvasActivity.class);
         } else if (id == R.id.ui_141) {
             startNextAcitivity(UI141AnimationActivity.class);
+        } else if (id == R.id.ui_142) {
+            startNextAcitivity(UI142MusicAnimationActivity.class);
         } else if (id == R.id.fit_213) {
             startNextAcitivity(ScreenFit213Activity.class);
         } else if (id == R.id.fit_214) {
             startNextAcitivity(DisplayCutoutActivity.class);
+        } else if (id == R.id.fit_215) {
+            startNextAcitivity(Screen215MusicAdapterActivity.class);
         } else if (id == R.id.design_312_313) {
             startNextAcitivity(MaterialDesign312Activity.class);
         } else if (id == R.id.design_314) {
