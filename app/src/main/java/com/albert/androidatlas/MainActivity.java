@@ -18,6 +18,7 @@ import com.albert.androidatlas.screen_fit_214.DisplayCutoutActivity;
 import com.albert.androidatlas.ui_core_123.UI123CanvasActivity;
 import com.albert.androidatlas.ui_core_124.UI124CanvasActivity;
 import com.albert.androidatlas.ui_core_125.UI125CanvasActivity;
+import com.albert.androidatlas.ui_core_141.UI141AnimationActivity;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -94,6 +95,8 @@ public class MainActivity extends AppCompatActivity
             startNextAcitivity(UI124CanvasActivity.class);
         } else if (id == R.id.ui_125) {
             startNextAcitivity(UI125CanvasActivity.class);
+        } else if (id == R.id.ui_141) {
+            startNextAcitivity(UI141AnimationActivity.class);
         } else if (id == R.id.fit_213) {
             startNextAcitivity(ScreenFit213Activity.class);
         } else if (id == R.id.fit_214) {
