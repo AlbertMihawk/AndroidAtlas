@@ -8,7 +8,6 @@ import android.view.WindowManager;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -38,7 +37,7 @@ public class MaterialDesign312Activity extends AppCompatActivity {
     private int mCurrentPosition;
 
 
-    @RequiresApi(api = Build.VERSION_CODES.P)
+    //    @RequiresApi(api = Build.VERSION_CODES.P)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +49,9 @@ public class MaterialDesign312Activity extends AppCompatActivity {
                 FLAG_FULLSCREEN);
 
         WindowManager.LayoutParams params = getWindow().getAttributes();
-        params.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            params.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
+        }
         getWindow().setAttributes(params);
 
         int visibility = getWindow().getDecorView().getSystemUiVisibility();
