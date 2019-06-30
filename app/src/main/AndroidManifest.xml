@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.albert.androidatlas">
+    <!-- 215_2抢红包服务声明 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
 
     <application
         android:allowBackup="true"
@@ -9,7 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".material_design_324.MaterialDesign324Activity"></activity>
+        <activity android:name=".material_design_323.MaterialDesign323Activity" />
+        <activity android:name=".material_design_322.MaterialDesign322Activity" />
+        <activity android:name=".material_design_321.MaterialDesign321Activity" />
         <activity android:name=".screen_fit_215.Screen215MusicAdapterActivity" />
+        <activity android:name=".screen_fit_215_2.Screen2152RedPackageActivity" />
         <activity
             android:name=".ui_core_142.UI142MusicAnimationActivity"
             android:theme="@style/AppTheme.MyActionBar" />
@@ -39,7 +46,19 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- 215_2抢红包服务声明 -->
+        <service
+            android:name=".screen_fit_215_2.MyAccessibilityService"
+            android:label="@string/accessibility_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibilityservice" />
+        </service>
     </application>
 
 </manifest>

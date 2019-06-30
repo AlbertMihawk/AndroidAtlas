@@ -36,11 +36,26 @@
             android:id="@+id/fit_215"
             android:title="@string/menu_Fit_215" />
         <item
+            android:id="@+id/fit_215_2"
+            android:title="@string/menu_Fit_215_2" />
+        <item
             android:id="@+id/design_312_313"
             android:title="@string/menu_Design_312_313" />
         <item
             android:id="@+id/design_314"
             android:title="@string/menu_Design_314" />
+        <item
+            android:id="@+id/design_321"
+            android:title="@string/menu_Design_321" />
+        <item
+            android:id="@+id/design_322"
+            android:title="@string/menu_Design_322" />
+        <item
+            android:id="@+id/design_323"
+            android:title="@string/menu_Design_323" />
+        <item
+            android:id="@+id/design_324"
+            android:title="@string/menu_Design_323" />
     </group>
 
 </menu>

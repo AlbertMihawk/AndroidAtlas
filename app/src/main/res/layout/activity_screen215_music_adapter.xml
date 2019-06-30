@@ -35,7 +35,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
-        android:text="工具类适配1" />
+        android:text="工 0 i y m P" />
+
+    <TextView
+        android:id="@+id/tvText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="y m P" />
 
     <TextView
         android:id="@+id/tvText4"
