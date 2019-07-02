@@ -14,6 +14,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.albert.androidatlas.material_design_312_313.MaterialDesign312Activity;
 import com.albert.androidatlas.material_design_314.MaterialDesign314Activity;
 import com.albert.androidatlas.material_design_321.MaterialDesign321Activity;
+import com.albert.androidatlas.material_design_321_2.MaterialDesign3212Activity;
 import com.albert.androidatlas.material_design_322.MaterialDesign322Activity;
 import com.albert.androidatlas.material_design_323.MaterialDesign323Activity;
 import com.albert.androidatlas.material_design_324.MaterialDesign324Activity;
@@ -121,6 +122,8 @@ public class MainActivity extends AppCompatActivity
             startNextAcitivity(MaterialDesign314Activity.class);
         } else if (id == R.id.design_321) {
             startNextAcitivity(MaterialDesign321Activity.class);
+        } else if (id == R.id.design_321_2) {
+            startNextAcitivity(MaterialDesign3212Activity.class);
         } else if (id == R.id.design_322) {
             startNextAcitivity(MaterialDesign322Activity.class);
         } else if (id == R.id.design_323) {
@@ -128,9 +131,6 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.design_324) {
             startNextAcitivity(MaterialDesign324Activity.class);
         }
-
-
-
 
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

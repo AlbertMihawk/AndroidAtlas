@@ -18,9 +18,10 @@
     <string name="menu_Fit_214">Fit-2.1.4-CutoutDisplay</string>
     <string name="menu_Fit_215">Fit-2.1.5-MusicAdapter</string>
     <string name="menu_Fit_215_2">Fit-2.1.5.2-RedPackage</string>
-    <string name="menu_Design_312_313">Design-3.1.2&amp;3.1.3-Recycle&amp;Coord&amp;Nested</string>
+    <string name="menu_Design_312_313">Design-3.1.2&amp;3-Recycle&amp;Coord&amp;Nested</string>
     <string name="menu_Design_314">Design-3.1.4-CardView</string>
     <string name="menu_Design_321">Design-3.2.1-CustomizedView</string>
+    <string name="menu_Design_321_2">Design-3.2.1.2-FlowLayout</string>
     <string name="menu_Design_322">Design-3.2.2-MaualRecyclerView</string>
     <string name="menu_Design_323">Design-3.2.3-SVG&amp;Pic</string>
     <string name="menu_Design_324">Design-3.2.4-AliVLayout</string>

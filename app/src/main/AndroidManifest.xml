@@ -11,10 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".material_design_324.MaterialDesign324Activity"></activity>
+        <activity android:name=".material_design_324.MaterialDesign324Activity" />
         <activity android:name=".material_design_323.MaterialDesign323Activity" />
         <activity android:name=".material_design_322.MaterialDesign322Activity" />
         <activity android:name=".material_design_321.MaterialDesign321Activity" />
+        <activity android:name=".material_design_321_2.MaterialDesign3212Activity" />
         <activity android:name=".screen_fit_215.Screen215MusicAdapterActivity" />
         <activity android:name=".screen_fit_215_2.Screen2152RedPackageActivity" />
         <activity

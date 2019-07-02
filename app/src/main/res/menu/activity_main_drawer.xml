@@ -48,6 +48,9 @@
             android:id="@+id/design_321"
             android:title="@string/menu_Design_321" />
         <item
+            android:id="@+id/design_321_2"
+            android:title="@string/menu_Design_321_2" />
+        <item
             android:id="@+id/design_322"
             android:title="@string/menu_Design_322" />
         <item

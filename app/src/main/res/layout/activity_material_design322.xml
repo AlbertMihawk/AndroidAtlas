@@ -6,4 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".material_design_322.MaterialDesign322Activity">
 
+    <com.albert.androidatlas.material_design_322.MyRecyclerView
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.albert.androidatlas.material_design_322.MyRecyclerView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
