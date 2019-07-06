@@ -37,6 +37,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.squareup.picasso:picasso:2.5.2'
 
+    implementation project(path: ':materialdesign324')
+    implementation project(path: ':ui132distribution')
     //design_312
 
 }

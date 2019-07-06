@@ -33,7 +33,8 @@ public class ProviceItem {
             RectF rect = new RectF();
             path.computeBounds(rect, true);
             canvas.scale(1.5f, 1.5f, rect.centerX(), rect.centerY());
-            paint.setShadowLayer(10, 0, 0, 0xFF4f4f4f);
+            paint.clearShadowLayer();
+//            paint.setShadowLayer(10, 0, 0, 0xFF4f4f4f);
             paint.setStrokeWidth(2);
             paint.setStyle(Paint.Style.FILL);
             paint.setColor(drawColor);
@@ -42,6 +43,7 @@ public class ProviceItem {
 //            绘制边界
             paint.setStyle(Paint.Style.STROKE);
             int strokeColor = 0xFFD0E8F4;
+            paint.setShadowLayer(10, 0, 0, 0xFF4f4f4f);
             paint.setColor(strokeColor);
             canvas.drawPath(path, paint);
             canvas.scale(1 / 1.5f, 1 / 1.5f, rect.centerX(), rect.centerY());

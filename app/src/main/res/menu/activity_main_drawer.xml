@@ -58,7 +58,7 @@
             android:title="@string/menu_Design_323" />
         <item
             android:id="@+id/design_324"
-            android:title="@string/menu_Design_323" />
+            android:title="@string/menu_Design_324" />
     </group>
 
 </menu>

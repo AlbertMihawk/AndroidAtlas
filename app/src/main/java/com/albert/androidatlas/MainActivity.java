@@ -17,7 +17,6 @@ import com.albert.androidatlas.material_design_321.MaterialDesign321Activity;
 import com.albert.androidatlas.material_design_321_2.MaterialDesign3212Activity;
 import com.albert.androidatlas.material_design_322.MaterialDesign322Activity;
 import com.albert.androidatlas.material_design_323.MaterialDesign323Activity;
-import com.albert.androidatlas.material_design_324.MaterialDesign324Activity;
 import com.albert.androidatlas.screen_fit_213.ScreenFit213Activity;
 import com.albert.androidatlas.screen_fit_214.DisplayCutoutActivity;
 import com.albert.androidatlas.screen_fit_215.Screen215MusicAdapterActivity;
@@ -27,11 +26,12 @@ import com.albert.androidatlas.ui_core_124.UI124CanvasActivity;
 import com.albert.androidatlas.ui_core_125.UI125CanvasActivity;
 import com.albert.androidatlas.ui_core_141.UI141AnimationActivity;
 import com.albert.androidatlas.ui_core_142.UI142MusicAnimationActivity;
+import com.albert.materialdesign324.MaterialDesign324Activity;
 import com.google.android.material.navigation.NavigationView;
 
 
 /**
- * FileName : MainActivity.java
+ * FileName : MaterialDesign324Activity.java
  *
  * @author : Mihawk
  * @since : 2019-06-07
@@ -88,48 +88,68 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+
+
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.ui_121) {
-            // Handle the camera action
-        } else if (id == R.id.ui_122) {
-
-        } else if (id == R.id.ui_123) {
-            startNextAcitivity(UI123CanvasActivity.class);
-        } else if (id == R.id.ui_124) {
-            startNextAcitivity(UI124CanvasActivity.class);
-        } else if (id == R.id.ui_125) {
-            startNextAcitivity(UI125CanvasActivity.class);
-        } else if (id == R.id.ui_141) {
-            startNextAcitivity(UI141AnimationActivity.class);
-        } else if (id == R.id.ui_142) {
-            startNextAcitivity(UI142MusicAnimationActivity.class);
-        } else if (id == R.id.fit_213) {
-            startNextAcitivity(ScreenFit213Activity.class);
-        } else if (id == R.id.fit_214) {
-            startNextAcitivity(DisplayCutoutActivity.class);
-        } else if (id == R.id.fit_215) {
-            startNextAcitivity(Screen215MusicAdapterActivity.class);
-        } else if (id == R.id.fit_215_2) {
-            startNextAcitivity(Screen2152RedPackageActivity.class);
-        } else if (id == R.id.design_312_313) {
-            startNextAcitivity(MaterialDesign312Activity.class);
-        } else if (id == R.id.design_314) {
-            startNextAcitivity(MaterialDesign314Activity.class);
-        } else if (id == R.id.design_321) {
-            startNextAcitivity(MaterialDesign321Activity.class);
-        } else if (id == R.id.design_321_2) {
-            startNextAcitivity(MaterialDesign3212Activity.class);
-        } else if (id == R.id.design_322) {
-            startNextAcitivity(MaterialDesign322Activity.class);
-        } else if (id == R.id.design_323) {
-            startNextAcitivity(MaterialDesign323Activity.class);
-        } else if (id == R.id.design_324) {
-            startNextAcitivity(MaterialDesign324Activity.class);
+        switch (id) {
+            case R.id.ui_121:
+                break;
+            case R.id.ui_122:
+                break;
+            case R.id.ui_123:
+                startNextAcitivity(UI123CanvasActivity.class);
+                break;
+            case R.id.ui_124:
+                startNextAcitivity(UI124CanvasActivity.class);
+                break;
+            case R.id.ui_125:
+                startNextAcitivity(UI125CanvasActivity.class);
+                break;
+            case R.id.ui_141:
+                startNextAcitivity(UI141AnimationActivity.class);
+                break;
+            case R.id.ui_142:
+                startNextAcitivity(UI142MusicAnimationActivity.class);
+                break;
+            case R.id.fit_213:
+                startNextAcitivity(ScreenFit213Activity.class);
+                break;
+            case R.id.fit_214:
+                startNextAcitivity(DisplayCutoutActivity.class);
+                break;
+            case R.id.fit_215:
+                startNextAcitivity(Screen215MusicAdapterActivity.class);
+                break;
+            case R.id.fit_215_2:
+                startNextAcitivity(Screen2152RedPackageActivity.class);
+                break;
+            case R.id.design_312_313:
+                startNextAcitivity(MaterialDesign312Activity.class);
+                break;
+            case R.id.design_314:
+                startNextAcitivity(MaterialDesign314Activity.class);
+                break;
+            case R.id.design_321:
+                startNextAcitivity(MaterialDesign321Activity.class);
+                break;
+            case R.id.design_321_2:
+                startNextAcitivity(MaterialDesign3212Activity.class);
+                break;
+            case R.id.design_322:
+                startNextAcitivity(MaterialDesign322Activity.class);
+                break;
+            case R.id.design_323:
+                startNextAcitivity(MaterialDesign323Activity.class);
+                break;
+            case R.id.design_324:
+                startNextAcitivity(MaterialDesign324Activity.class);
+                break;
         }
 
 
