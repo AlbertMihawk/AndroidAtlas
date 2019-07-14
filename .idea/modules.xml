@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidAtlas.iml" filepath="$PROJECT_DIR$/AndroidAtlas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/actual324VLayout/actual324VLayout.iml" filepath="$PROJECT_DIR$/actual324VLayout/actual324VLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/actual325CloudMusic/actual325CloudMusic.iml" filepath="$PROJECT_DIR$/actual325CloudMusic/actual325CloudMusic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/actual326Animator/actual326Animator.iml" filepath="$PROJECT_DIR$/actual326Animator/actual326Animator.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/materialdesign324/materialdesign324.iml" filepath="$PROJECT_DIR$/materialdesign324/materialdesign324.iml" />
       <module fileurl="file://$PROJECT_DIR$/ui132distribution/ui132distribution.iml" filepath="$PROJECT_DIR$/ui132distribution/ui132distribution.iml" />
     </modules>
   </component>

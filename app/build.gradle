@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.albert.androidatlas"
-        minSdkVersion 26
+        minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -37,8 +37,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.squareup.picasso:picasso:2.5.2'
 
-    implementation project(path: ':materialdesign324')
+    implementation project(path: ':actual324VLayout')
     implementation project(path: ':ui132distribution')
+    implementation project(path: ':actual325CloudMusic')
     //design_312
 
 }

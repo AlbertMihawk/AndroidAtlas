@@ -10,7 +10,6 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.albert.androidatlas.R;
@@ -24,7 +23,6 @@ import com.albert.androidatlas.R;
 
 public class DisplayCutoutActivity extends AppCompatActivity {
 
-    @RequiresApi(api = Build.VERSION_CODES.P)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,13 +47,15 @@ public class DisplayCutoutActivity extends AppCompatActivity {
 
         DisplayCutout displayCutout;
         View rootView = window.getDecorView();
-        WindowInsets insets = rootView.getRootWindowInsets();//理解为窗口下挫
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P && insets != null) {
-            displayCutout = insets.getDisplayCutout();
-            if (displayCutout.getBoundingRects() != null &&
-                    displayCutout.getBoundingRects().size() > 0 &&
-                    displayCutout.getSafeInsetTop() > 0) {
-                hasDisplayCutout = true;
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP_MR1) {
+            WindowInsets insets = rootView.getRootWindowInsets();//理解为窗口下挫
+            if (Build.VERSION.SDK_INT > Build.VERSION_CODES.P && insets != null) {
+                displayCutout = insets.getDisplayCutout();
+                if (displayCutout.getBoundingRects() != null &&
+                        displayCutout.getBoundingRects().size() > 0 &&
+                        displayCutout.getSafeInsetTop() > 0) {
+                    hasDisplayCutout = true;
+                }
             }
         }
 
@@ -68,8 +68,10 @@ public class DisplayCutoutActivity extends AppCompatActivity {
              * @see #LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES 允许内容区延伸进刘海区
              * @see #LAYOUT_IN_DISPLAY_CUTOUT_MODE_NEVER 不允许内容延伸进刘海区
              */
-            params.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
-            window.setAttributes(params);
+            if (Build.VERSION.SDK_INT > Build.VERSION_CODES.P) {
+                params.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
+                window.setAttributes(params);
+            }
 
             //3.设置成沉浸式
             int flags = View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION

@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".material_design_322.MaterialDesign322Activity">
+    tools:context=".actual_322.MaterialDesign322Activity">
 
-    <com.albert.androidatlas.material_design_322.MyRecyclerView
+    <com.albert.androidatlas.actual_322.MyRecyclerView
         android:id="@+id/table"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,6 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-    </com.albert.androidatlas.material_design_322.MyRecyclerView>
+    </com.albert.androidatlas.actual_322.MyRecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

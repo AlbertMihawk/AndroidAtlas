@@ -5,17 +5,17 @@
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".material_design_324.MaterialDesign324Activity" />
-        <activity android:name=".material_design_323.MaterialDesign323Activity" />
-        <activity android:name=".material_design_322.MaterialDesign322Activity" />
-        <activity android:name=".material_design_321.MaterialDesign321Activity" />
-        <activity android:name=".material_design_321_2.MaterialDesign3212Activity" />
+        <activity android:name=".actual_323.MaterialDesign323Activity" />
+        <activity android:name=".actual_322.MaterialDesign322Activity" />
+        <activity android:name=".actual_321.MaterialDesign321Activity" />
+        <activity android:name=".actual_321_2.MaterialDesign3212Activity" />
         <activity android:name=".screen_fit_215.Screen215MusicAdapterActivity" />
         <activity android:name=".screen_fit_215_2.Screen2152RedPackageActivity" />
         <activity
@@ -23,8 +23,8 @@
             android:theme="@style/AppTheme.MyActionBar" />
         <activity android:name=".ui_core_141.UI141AnimationActivity" />
         <activity android:name=".ui_core_132.UI132DistributionActivity" />
-        <activity android:name=".material_design_314.MaterialDesign314Activity" />
-        <activity android:name=".material_design_312_313.MaterialDesign312Activity" />
+        <activity android:name=".actual_314.MaterialDesign314Activity" />
+        <activity android:name=".actual_312_313.MaterialDesign312Activity" />
         <activity
             android:name=".screen_fit_214.DisplayCutoutActivity"
             android:theme="@style/MyAppTheme" />
@@ -40,7 +40,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />

@@ -1,9 +1,13 @@
 package com.albert.androidatlas.screen_fit_215.ui;
 
 import android.content.Context;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import androidx.annotation.RequiresApi;
 
 /**
  * Filename : UIRelativeLayout.java
@@ -28,6 +32,8 @@ public class UIRelativeLayout extends RelativeLayout {
         super(context, attrs, defStyleAttr);
     }
 
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public UIRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
@@ -43,6 +49,10 @@ public class UIRelativeLayout extends RelativeLayout {
             int childCount = this.getChildCount();
             for (int i = 0; i < childCount; i++) {
                 View child = getChildAt(i);
+                if (child instanceof TextView) {
+                    ((TextView) child).setTextSize(((TextView) child).getTextSize() * scaleX);
+                }
+
                 LayoutParams params = (LayoutParams) child.getLayoutParams();
                 params.width = (int) (params.width * scaleX);
                 params.height = (int) (params.height * scaleY);

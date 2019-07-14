@@ -39,26 +39,29 @@
             android:id="@+id/fit_215_2"
             android:title="@string/menu_Fit_215_2" />
         <item
-            android:id="@+id/design_312_313"
+            android:id="@+id/actual_312_313"
             android:title="@string/menu_Design_312_313" />
         <item
-            android:id="@+id/design_314"
+            android:id="@+id/actual_314"
             android:title="@string/menu_Design_314" />
         <item
-            android:id="@+id/design_321"
+            android:id="@+id/actual_321"
             android:title="@string/menu_Design_321" />
         <item
-            android:id="@+id/design_321_2"
+            android:id="@+id/actual_321_2"
             android:title="@string/menu_Design_321_2" />
         <item
-            android:id="@+id/design_322"
+            android:id="@+id/actual_322"
             android:title="@string/menu_Design_322" />
         <item
-            android:id="@+id/design_323"
+            android:id="@+id/actual_323"
             android:title="@string/menu_Design_323" />
         <item
-            android:id="@+id/design_324"
+            android:id="@+id/actual_324"
             android:title="@string/menu_Design_324" />
+        <item
+            android:id="@+id/actual_325"
+            android:title="@string/menu_Design_325" />
     </group>
 
 </menu>

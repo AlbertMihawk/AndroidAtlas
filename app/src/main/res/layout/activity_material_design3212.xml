@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".material_design_321_2.MaterialDesign3212Activity">
+    tools:context=".actual_321_2.MaterialDesign3212Activity">
 
-    <com.albert.androidatlas.material_design_321_2.FlowLayout
+    <com.albert.androidatlas.actual_321_2.FlowLayout
         android:id="@+id/flow"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

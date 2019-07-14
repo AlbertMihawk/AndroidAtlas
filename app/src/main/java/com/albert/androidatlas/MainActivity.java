@@ -11,12 +11,13 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.albert.androidatlas.material_design_312_313.MaterialDesign312Activity;
-import com.albert.androidatlas.material_design_314.MaterialDesign314Activity;
-import com.albert.androidatlas.material_design_321.MaterialDesign321Activity;
-import com.albert.androidatlas.material_design_321_2.MaterialDesign3212Activity;
-import com.albert.androidatlas.material_design_322.MaterialDesign322Activity;
-import com.albert.androidatlas.material_design_323.MaterialDesign323Activity;
+import com.albert.actual325.Actual325MainActivity;
+import com.albert.androidatlas.actual_312_313.MaterialDesign312Activity;
+import com.albert.androidatlas.actual_314.MaterialDesign314Activity;
+import com.albert.androidatlas.actual_321.MaterialDesign321Activity;
+import com.albert.androidatlas.actual_321_2.MaterialDesign3212Activity;
+import com.albert.androidatlas.actual_322.MaterialDesign322Activity;
+import com.albert.androidatlas.actual_323.MaterialDesign323Activity;
 import com.albert.androidatlas.screen_fit_213.ScreenFit213Activity;
 import com.albert.androidatlas.screen_fit_214.DisplayCutoutActivity;
 import com.albert.androidatlas.screen_fit_215.Screen215MusicAdapterActivity;
@@ -26,12 +27,14 @@ import com.albert.androidatlas.ui_core_124.UI124CanvasActivity;
 import com.albert.androidatlas.ui_core_125.UI125CanvasActivity;
 import com.albert.androidatlas.ui_core_141.UI141AnimationActivity;
 import com.albert.androidatlas.ui_core_142.UI142MusicAnimationActivity;
-import com.albert.materialdesign324.MaterialDesign324Activity;
+import com.albert.actual324.Actual324Activity;
 import com.google.android.material.navigation.NavigationView;
+
+//import com.albert.materialdesign324.Actual324Activity;
 
 
 /**
- * FileName : MaterialDesign324Activity.java
+ * FileName : Actual324Activity.java
  *
  * @author : Mihawk
  * @since : 2019-06-07
@@ -89,8 +92,6 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -129,26 +130,29 @@ public class MainActivity extends AppCompatActivity
             case R.id.fit_215_2:
                 startNextAcitivity(Screen2152RedPackageActivity.class);
                 break;
-            case R.id.design_312_313:
+            case R.id.actual_312_313:
                 startNextAcitivity(MaterialDesign312Activity.class);
                 break;
-            case R.id.design_314:
+            case R.id.actual_314:
                 startNextAcitivity(MaterialDesign314Activity.class);
                 break;
-            case R.id.design_321:
+            case R.id.actual_321:
                 startNextAcitivity(MaterialDesign321Activity.class);
                 break;
-            case R.id.design_321_2:
+            case R.id.actual_321_2:
                 startNextAcitivity(MaterialDesign3212Activity.class);
                 break;
-            case R.id.design_322:
+            case R.id.actual_322:
                 startNextAcitivity(MaterialDesign322Activity.class);
                 break;
-            case R.id.design_323:
+            case R.id.actual_323:
                 startNextAcitivity(MaterialDesign323Activity.class);
                 break;
-            case R.id.design_324:
-                startNextAcitivity(MaterialDesign324Activity.class);
+            case R.id.actual_324:
+                startNextAcitivity(Actual324Activity.class);
+                break;
+            case R.id.actual_325:
+                startNextAcitivity(Actual325MainActivity.class);
                 break;
         }
 
